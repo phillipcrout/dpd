@@ -3,9 +3,9 @@ import numpy as np
 from matplotlib import pyplot as plt
 import seaborn as sns
 
-path = '~/Documents/scripts/dpd/data/'
+path = '/data/'
 
-df = pd.read_csv(path+'outpute4.txt',header=None,sep='\t',names=['A','B','d'])
+df = pd.read_csv(path+"outpute4.txt",header=None,sep='\t',names=['A','B','d'])
 df2 = pd.read_csv(path+'outpute5.txt',header=None,sep='\t',names=['A','B','d'])
 
 def theoretical_density(df):
