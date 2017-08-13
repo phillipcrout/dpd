@@ -2,11 +2,18 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 import seaborn as sns
+import os
 
-path = '/data/'
+##for reproducibility
+file_direct = os.path.realpath(__file__)
+slash = '/'
+fd = file_direct.split(sep='/')[:-1]
+folder = slash.join(fd)+'/'
+os.chdir(folder)
 
-df = pd.read_csv(path+"outpute4.txt",header=None,sep='\t',names=['A','B','d'])
-df2 = pd.read_csv(path+'outpute5.txt',header=None,sep='\t',names=['A','B','d'])
+
+df = pd.read_csv('data/outpute4.txt',header=None,sep='\t',names=['A','B','d'])
+df2 = pd.read_csv('data/outpute5.txt',header=None,sep='\t',names=['A','B','d'])
 
 def theoretical_density(df):
     df['td'] = 3.1 + -1.121*df.A*(df.B-1.136)**(-0.852)
