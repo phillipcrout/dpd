@@ -33,7 +33,6 @@ xd,yd = extract_data_from_frame(main_df)
 p0 = [1,0.1,1,5,-1]
 mega = cf(fitting,xd,yd,p0=p0,maxfev=1000000000)[0]
 
-"""
 for A_val in np.unique(xd.A): 
     plt.figure()
     xdt,ydt = xd[xd.A==A_val],yd[xd.A==A_val]
@@ -42,7 +41,7 @@ for A_val in np.unique(xd.A):
     plt.title(str(A_val))
     plt.ylabel('gamma')
     plt.xlabel('B')
-"""
+
 error = np.abs(np.divide(yd - fitting(xd,*mega),yd))
 fit_landscape = fitting(xd,*mega)
 dat_landscape = yd
