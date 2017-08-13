@@ -4,17 +4,18 @@ from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit as cf
 import seaborn as sns
 
-main_df = pd.read_csv('/home/phillip/Downloads/gamma_list_cleared.out')
+df = pd.read_csv('/home/phillip/Downloads/gamma_list_cleared.out')
 
 negA,negB,posA,posB = -11,7.5,-71,71
 
-main_df = main_df[main_df.A < negA]
-main_df = main_df[main_df.B > negB]
-main_df = main_df[main_df.A > posA]
-main_df = main_df[main_df.B < posB]
-main_df = main_df[main_df.gamma > 3]
-main_df.drop(131,inplace=True)        ##error in an item
+## select subset of data
 
+df = df.loc[(df["B"] > negB) & (df["B"] < posB)]
+df = df.loc[(df.A < negA) & (df.A > posA) & (df.gamma>3)]
+
+## Drop an error and order data for plotting
+
+main_df = df.drop(131)
 main_df.sort_values(['A','B'],inplace=True)  ###
 
 def fitting(xdata,a,b,c,d,e):
