@@ -26,13 +26,13 @@ plt.scatter(df.A[df.B==B_val],df.d[df.B==B_val],color='b',)
 plt.scatter(df2.A,df2.d,color='b')
 plt.scatter(df2.A,df2.td,color='r')
 plt.ylabel('Density')
-plt.xlabel('B')
+plt.xlabel('A')
 #plt.savefig('Constant_A.png')
 plt.show()
 
 df['dif'] = df.td - df.d # thus > 0
 
-data = pd.DataFrame(data={'x':df.A, 'y':df.B, 'z':df.dif})
+data = pd.DataFrame(data={'x':df.A, 'y':df.B, 'z':df.d})
 data = data.pivot(index='x', columns='y', values='z')
 
 fig = plt.figure()
@@ -42,5 +42,5 @@ sns.heatmap(data,cmap='viridis',alpha=0.5,ax=ax)
 ax.plot([0,14],[3,6], marker='x',color='red') 
 plt.xlabel('B')
 plt.ylabel('A')
-plt.title('Heat map of deviation from theory')
+plt.title('Density')
 #plt.savefig('Heat_Map.png')
