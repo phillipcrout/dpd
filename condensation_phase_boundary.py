@@ -13,23 +13,25 @@ os.chdir(folder)
 
 
 df = pd.read_csv('data/outpute4.txt',header=None,sep='\t',names=['A','B','d'])
-df2 = pd.read_csv('data/outpute5.txt',header=None,sep='\t',names=['A','B','d'])
+#df2 = pd.read_csv('data/outpute5.txt',header=None,sep='\t',names=['A','B','d'])
 
 def theoretical_density(df):
     df['td'] = 3.1 + -1.121*df.A*(df.B-1.136)**(-0.852)
 
 theoretical_density(df)
-theoretical_density(df2)
+#theoretical_density(df2)
 
-B_val = 50
-plt.scatter(df.A[df.B==B_val],df.d[df.B==B_val],color='b',)
-plt.scatter(df2.A,df2.d,color='b')
-plt.scatter(df2.A,df2.td,color='r')
-plt.ylabel('Density')
-plt.xlabel('A')
-#plt.savefig('Constant_A.png')
-plt.show()
+for B_val in np.unique(df.B):
+    plt.figure()
+    plt.scatter(df.A[df.B==B_val],df.d[df.B==B_val],color='b')
+    plt.scatter(df.A[df.B==B_val],df.td[df.B==B_val],color='r')
+    plt.ylabel('Density')
+    plt.xlabel('A')
+    plt.title('B = ' + str(B_val))
+    plt.savefig('./images/density_A_at_B_' + str(B_val) + '.png')
+    plt.show()
 
+"""
 df['dif'] = df.td - df.d # thus > 0
 
 data = pd.DataFrame(data={'x':df.A, 'y':df.B, 'z':df.d})
@@ -44,3 +46,4 @@ plt.xlabel('B')
 plt.ylabel('A')
 plt.title('Density')
 #plt.savefig('Heat_Map.png')
+"""
