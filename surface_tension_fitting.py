@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit as cf
 import seaborn as sns
 
-df = pd.read_csv('/home/phillip/Downloads/gamma_list_cleared.out')
+df = pd.read_csv('/../data/gamma_list_cleared.out')
 
 negA,negB,posA,posB = -11,7.5,-71,71
 
@@ -54,4 +54,3 @@ sns.heatmap(data)
 plt.xlabel('B')
 plt.ylabel('A')
 plt.title('Heat map of error')
-#plt.savefig('/home/phillip/Documents/dpd/img/heatmap4.png')
