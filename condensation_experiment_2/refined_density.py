@@ -34,23 +34,19 @@ total_density_frame = []
 for file in files:
       Atoms = xyz_lib.Atoms
       Alpha = xyz_lib.Atoms.read(Atoms,folder+file)
-
       location = Alpha.xyz
 
-      
       particle_count = np.zeros_like(counters)
 
       for count in counters:
           index = int(np.where(count==counters)[0])
           particle_count[index] = box_count(location,count,d)
     
-      #plt.plot(particle_count)
       density = density_finding(particle_count,A,d)
       total_density_frame.append(density)
+      plt.figure()
+      plt.plot(counters,particle_count)
+      plt.savefig('test'+file+'.png')
 
-#print(total_density_frame)
 print(np.mean(total_density_frame))
 
-plt.figure()
-plt.plot(counters,particle_count)
-plt.savefig('test.png')
