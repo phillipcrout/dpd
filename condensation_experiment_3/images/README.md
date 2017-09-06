@@ -12,9 +12,9 @@ Images mXX_60.png are run over 10k steps, we see a movement from liquid like to 
 
 At **A** == -30: 
 
-<img src="m30_60.png" alt="Drawing" style="width: 45px;"/>
+<img src="m30_60.png" alt="Drawing" width="45"/>
 
 At **A** == -20:
 
-<img src="m20_60.png" alt="Drawing" style="width: 45px;"/>
+<img src="m20_60.png" alt="Drawing" width="45"/>
 
