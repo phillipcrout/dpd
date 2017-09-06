@@ -12,10 +12,9 @@ Images mXX_60.png are run over 10k steps, we see a movement from liquid like to 
 
 At **A** == -30: 
 
-![alt text](https://github.com/phillipcrout/dpd/blob/master/condensation_experiment_3/images/m30_60.png)
-
 <img src="m30_60.png" alt="Drawing" style="width: 45px;"/>
 
 At **A** == -20:
 
-![alt text](https://github.com/phillipcrout/dpd/blob/master/condensation_experiment_3/images/m20_60.png)
+<img src="m20_60.png" alt="Drawing" style="width: 45px;"/>
+
