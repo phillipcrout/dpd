@@ -14,7 +14,7 @@ At **A** == -30:
 
 ![alt text](https://github.com/phillipcrout/dpd/blob/master/condensation_experiment_3/images/m30_60.png)
 
-<img src="m30_60.png" alt="Drawing" style="width: 100px;"/>
+<img src="m30_60.png" alt="Drawing" style="width: 45px;"/>
 
 At **A** == -20:
 
