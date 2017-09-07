@@ -34,9 +34,9 @@ Below we have three images, which reading from left to right are taken from step
 ### Working with **A** = -25
 
 <div>
-            <img src="images/A_200/dump_1.png" alt="Drawing" width="250"/>
-            <img src="images/A_200/dump_12.png" alt="Drawing" width="250"/>
-            <img src="images/A_200/dump_24.png" alt="Drawing" width="250"/>
+            <img src="images/A_250/dump_1.png" alt="Drawing" width="250"/>
+            <img src="images/A_250/dump_12.png" alt="Drawing" width="250"/>
+            <img src="images/A_250/dump_24.png" alt="Drawing" width="250"/>
 </div>
 
 
