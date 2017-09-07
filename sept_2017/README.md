@@ -28,15 +28,18 @@ The first thing to note is that one value is 0. This prevents calculations of th
 
 _still underway_
 
-** t = 0 **
+<div id="banner" style="overflow: hidden; ">
+     <div class="image-div" >
+            <img src="images/dump_1.png" alt="Drawing" width="500"/>
+        </div>
 
-<img src="images/dump_1.png" alt="Drawing" width="500"/>
+          <div class="image-div" >
+            <img src="images/dump_12.png" alt="Drawing" width="500"/>
+                   </div>
 
-** t = 250k **
-
-<img src="images/dump_12.png" alt="Drawing" width="500"/>
-
-** t = 500k **
-
-<img src="images/dump_24.png" alt="Drawing" width="500"/>
+                  <div class="image-div" >
+                    <img src="images/dump_24.png" alt="Drawing" width="500"/>
+                        </div>
+                          <div style="clear:left;"></div>
+                          </div>
 
