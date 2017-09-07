@@ -1,10 +1,12 @@
-__Throughout this project we will use a timestep = 0.01__
+## Preliminaries
 
-## Discussion
+_The experiments under discussion here use a timestep = 0.01_ and **B** = 60. Plots are of local density (this is a particle count over a distance of 0.5 and a cross sectional area of 25). The distance axis (x) is given in units of the DPD length.
+
+## Results
 
 These images contain analysis over two dimensions, the first is the value of **A**
 
-Images mXX_60.png are run over 10k steps, we see a movement from liquid like to gas like behaviour even at these short time scales. The axis on the bottom is x, the height is number of particles over a thin (0.5) slice. This converts to local density with division by (25*0.5).
+Images mXX_60.png are run over 10k steps, we see a movement from liquid like to gas like behaviour even at these short time scales.
 
 At **A** = -30: 
 
