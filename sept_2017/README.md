@@ -1,8 +1,4 @@
-## Skip to Discussion 
-
-dump_15_20 is 20,000 timesteps for B = 60 and A = -22.5 ~ although we don't know what step this is at
-
-dump_15_xx is 40,000 timesteps for B = 60 and A = -22.5 ~ although we don't what step this is at
+__Throughout this project we will use a timestep = 0.01__
 
 ## Discussion
 
@@ -25,8 +21,10 @@ This is well and good to start, but things get more complicated as we approach t
 The first thing to note is that one value is 0. This prevents calculations of the the form **max x 0.9 > min** working, however this can be worked around. The underlying physics is more interesting and can be seen by expanding the number of timesteps.
 
 ## Extending the timestep
+### Working with **A** = -22.5
 
-_still underway_
+Below we have three images, which reading from left to right are taken from steps=0 , steps = 250k and steps = 500k
+
 <div>
             <img src="images/dump_1.png" alt="Drawing" width="250"/>
             <img src="images/dump_12.png" alt="Drawing" width="250"/>
