@@ -20,7 +20,7 @@ At **A** = -20:
 
 This is well and good to start, but things get more complicated as we approach the boundary. As a concrete example consider the image produced for **A** = -22.5; which can't naturally be described as either a liquid or a gas.
 
-<img src="imagesm22.5_60.png" alt="Drawing" width="500"/>
+<img src="images/m22.5_60.png" alt="Drawing" width="500"/>
 
 The first thing to note is that one value is 0. This prevents calculations of the the form **max x 0.9 > min** working, however this can be worked around. The underlying physics is more interesting and can be seen by expanding the number of timesteps.
 
