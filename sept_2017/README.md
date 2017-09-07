@@ -28,7 +28,7 @@ The first thing to note is that one value is 0. This prevents calculations of th
 
 _still underway_
 <div>
-            <img src="images/dump_1.png" alt="Drawing" width="300"/>
+            <img src="images/dump_1.png" alt="Drawing" width="300" style="float: right;"/>
 
             <img src="images/dump_12.png" alt="Drawing" width="300"/>
 
