@@ -27,7 +27,7 @@ The first thing to note is that one value is 0. This prevents calculations of th
 ## Extending the timestep
 
 _still underway_
-
+<p align="center">
 <div id="banner" style="overflow: hidden; ">
      <div class="image-div" >
             <img src="images/dump_1.png" alt="Drawing" width="300"/>
@@ -42,4 +42,4 @@ _still underway_
               </div>
     <div style="clear:left;"></div>
 </div>
-
+</p>
