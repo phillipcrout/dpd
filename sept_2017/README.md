@@ -28,18 +28,9 @@ The first thing to note is that one value is 0. This prevents calculations of th
 
 _still underway_
 <p align="center">
-<div id="banner" style="overflow: hidden; ">
-     <div class="image-div" >
             <img src="images/dump_1.png" alt="Drawing" width="300"/>
-        </div>
 
-     <div class="image-div" >
             <img src="images/dump_12.png" alt="Drawing" width="300"/>
-                   </div>
 
-      <div class="image-div" >
             <img src="images/dump_24.png" alt="Drawing" width="300"/>
-              </div>
-    <div style="clear:left;"></div>
-</div>
 </p>
