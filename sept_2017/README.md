@@ -59,6 +59,10 @@ In the final case we instead use 0,200k and 300k (to save experimental time)
             <img src="images/A_150/dump_24.png" alt="Drawing" width="250"/>
 </div>
 
+## Zooming in on the phase transition
+
+The above work suggests that it's reasonably difficult/slow to form a 'clean' gas phase.However if we find that the liquid phase is 'clean' (see A=-25) we may be able to use that instead. 
+
 ## Averaging over many frames
 
 In this set of experiments we ramp up the equilbration time and reduce the trajectory significantly.
