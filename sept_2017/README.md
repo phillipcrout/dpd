@@ -63,7 +63,7 @@ In the final case we instead use 0,200k and 300k (to save experimental time)
 
 The above work suggests that it's reasonably difficult/slow to form a 'clean' gas phase. However if we find that the liquid phase is 'clean' (see A=-25) we may be able to use that instead. 
 
-Hoorah! We have something we can work with:
+Hoorah! We have something we can work with (these are off 250k steps):
 
 ### A = -24
 
@@ -76,9 +76,9 @@ Hoorah! We have something we can work with:
 ### A = -23
 
 <div>
-            <img src="images/A_240/dump_1.png" alt="Drawing" width="250"/>
-            <img src="images/A_240/dump_12.png" alt="Drawing" width="250"/>
-            <img src="images/A_240/dump_24.png" alt="Drawing" width="250"/>
+            <img src="images/A_230/dump_1.png" alt="Drawing" width="250"/>
+            <img src="images/A_230/dump_12.png" alt="Drawing" width="250"/>
+            <img src="images/A_230/dump_24.png" alt="Drawing" width="250"/>
 </div>
 
 
