@@ -21,6 +21,8 @@ def ten_percent_liquid(particle_count):
 
 folder_root = '/home/pc494/DL_MESO/dl_meso/post_grad/folders/'
 folders = os.listdir(folder_root)
+## override this to investigate a single folder
+folders = ['60_-24']
 
 half_box_size = 20
 d = 0.5
@@ -39,12 +41,15 @@ for folder in folders:
             for count in counters:
                 index = int(np.where(count==counters)[0])
                 particle_count[index] = box_count(location,count,d)
-            frame_result = ten_percent_liquid(particle_count)
-            is_it_a_liquid.append(frame_result)
+            #frame_result = ten_percent_liquid(particle_count)
+            #is_it_a_liquid.append(frame_result)
 
-    plt.figure()
-    plt.plot(counters,particle_count)
-    save_string = folder+file[:-4]+'.png' 
-    plt.savefig(save_string)
-print((is_it_a_liquid))
+            plt.figure()
+            plt.plot(counters,particle_count)
+            plt.xlabel('x')
+            plt.ylabel('Dproxy')
+            save_string = file[:-4]+'.png' 
+            plt.title(save_string)
+            plt.savefig(save_string)
+#print((is_it_a_liquid))
 
