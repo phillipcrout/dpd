@@ -18,11 +18,11 @@ def generate_counters_vector(half_box_size,d):
 
 def counters_in_given_box(dump_file,counters):
         Atoms = xyz_lib.Atoms
-        Alpha = xyz_lib.Atoms.read(dump_file)
+        Alpha = xyz_lib.Atoms.read(Atoms,dump_file)
         location = Alpha.xyz
 
         particle_count = np.zeros_like(counters)
-
+        d = counters[1]-counters[0]
         for count in counters:
             index = int(np.where(count==counters)[0])
             particle_count[index] = box_count(location,count,d)
