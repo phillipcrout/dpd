@@ -4,7 +4,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-particle_count = np.loadtxt('particle_count.txt')
+particle_count = np.loadtxt('particle_count_2.txt')
 
 plt.figure()
 plt.plot(particle_count[0],particle_count[1])
