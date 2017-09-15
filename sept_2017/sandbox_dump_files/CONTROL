@@ -1,0 +1,21 @@
+DL_MESO vapour-liquid interface example
+
+volume 40.0 5.0 5.0
+temperature 1.0
+cutoff 1.0
+manybody cutoff 0.75
+
+timestep 0.01
+steps 250000
+equilibration steps 0
+scale temperature every 10
+trajectory 0 1000
+stats every 500
+stack size 100
+print every 10000
+job time 3600.0
+close time 200.0
+
+ensemble nvt mdvv
+
+finish
